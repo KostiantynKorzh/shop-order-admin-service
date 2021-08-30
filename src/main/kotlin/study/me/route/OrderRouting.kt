@@ -15,6 +15,12 @@ val orderService = OrderService(dbConfig.initDb())
 
 fun Application.configureOrderRouting() {
     routing {
+        route(""){
+            get{
+                call.respondText("Initial page")
+            }
+        }
+
         route("/orders") {
 
             get {

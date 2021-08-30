@@ -10,7 +10,7 @@ import io.ktor.server.netty.*
 import study.me.route.configureOrderRouting
 
 fun main() {
-    embeddedServer(Netty, port = 8090, host = "localhost") {
+    embeddedServer(Netty, port = 8080) {
         install(ContentNegotiation) {
             json()
         }
