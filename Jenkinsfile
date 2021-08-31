@@ -12,7 +12,7 @@ pipeline {
             steps{
                 script{
                     sh 'rm -rf ./build/'
-                    sh './gradlew installDist'
+                    sh 'sudo ./gradlew installDist'
                 }
             }
         }
